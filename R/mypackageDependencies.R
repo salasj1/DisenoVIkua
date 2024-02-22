@@ -1,6 +1,6 @@
 mypackageDependencies <- function() {
   # Define la ruta absoluta al directorio 'assets'
-  assetsPath <- normalizePath(file.path(getwd(), "inst", "assets"))
+  assetsPath <- system.file("inst/assets", package = "PaquetePrueba")
 
   # Asegúrate de que el directorio existe
   if (!dir.exists(assetsPath)) {
