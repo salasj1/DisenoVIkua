@@ -1,6 +1,6 @@
 mypackageDependencies <- function() {
-  # Obtén la ruta al directorio 'assets' dentro del paquete
-  assetsPath <- system.file("inst/assets", package = "PaquetePrueba")
+  # Define la ruta relativa al directorio 'assets'
+  assetsPath <- file.path("inst", "assets")
 
   # Asegúrate de que el directorio existe
   if (!dir.exists(assetsPath)) {
