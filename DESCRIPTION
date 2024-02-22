@@ -1,7 +1,7 @@
 Package: PaquetePrueba
 Type: Package
 Title: NUEVO
-Version: 0.1
+Version: 0.2
 Author: Alejandro Salas
 Maintainer: Alejandro Salas <alejandrosalas0922@email.com>
 Description: Más detalles sobre lo que hace el paquete.

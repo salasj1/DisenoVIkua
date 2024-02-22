@@ -12,7 +12,7 @@ mypackageDependencies <- function() {
 
   # Devuelve la dependencia HTML
   htmlDependency(
-    name = "mypackage-assets-0.1",
+    name = "mypackage-assets",
     version = "0.2",
     package = "PaquetePrueba",
     src = assetsPath,
