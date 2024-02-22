@@ -1,5 +1,5 @@
 mypackageDependencies <- function() {
-  # Define la ruta absoluta al directorio 'assets'
+  # Define la ruta relativa al directorio 'assets'
   assetsPath <- system.file("inst/assets", package = "PaquetePrueba")
 
   # Asegúrate de que el directorio existe
@@ -8,7 +8,7 @@ mypackageDependencies <- function() {
   }
 
   # Agrega el directorio de los activos como una ruta de recursos para que Shiny la utilice
-  shiny::addResourcePath("mypackage-assets-0.1", assetsPath)
+  shiny::addResourcePath("mypackage-assets", assetsPath)
 
   # Devuelve la dependencia HTML
   htmlDependency(
