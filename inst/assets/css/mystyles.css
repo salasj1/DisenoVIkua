@@ -1,8 +1,8 @@
-.dashboard1 .skin-blue .main-sidebar {
+.dashboard1  {
     background-color: blue !important;
 }
 
-.dashboard2 .skin-blue .main-sidebar {
+.dashboard2 {
     background-color: red !important;
 }
 
