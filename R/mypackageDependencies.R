@@ -1,6 +1,6 @@
 mypackageDependencies <- function() {
-  # Define la ruta relativa al directorio 'assets'
-  assetsPath <- file.path("inst", "assets")
+  # Define la ruta absoluta al directorio 'assets'
+  assetsPath <- normalizePath(file.path(getwd(), "inst", "assets"))
 
   # Asegúrate de que el directorio existe
   if (!dir.exists(assetsPath)) {
@@ -13,7 +13,7 @@ mypackageDependencies <- function() {
   # Devuelve la dependencia HTML
   htmlDependency(
     name = "mypackage-assets-0.1",
-    version = "0.1",
+    version = "0.2",
     package = "PaquetePrueba",
     src = assetsPath,
     script = "js/myscript.js",
