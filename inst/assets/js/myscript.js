@@ -1,4 +1,13 @@
+function applyDashboardStyle(dashboardId, color) {
+    var dashboard = document.querySelector(dashboardId);
+    if(dashboard) {
+        dashboard.style.backgroundColor = color;
+    }
+}
+
 document.addEventListener("DOMContentLoaded", function() {
+
+
     var myButton = document.getElementById("myButton");
     if (myButton) {
         myButton.onclick = function() {
