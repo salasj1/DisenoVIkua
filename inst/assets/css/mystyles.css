@@ -1,0 +1,34 @@
+#barPlotAle {
+    height: 300px;
+    width: 100%;
+}
+.histPlotAle {
+    background-color: blue;
+    border-color: lightblue;
+}
+
+#textInputAle {
+    color: green;
+    font-family: "Times New Roman";
+    font-style: oblique;
+    font-size: 20px;
+}
+
+#sliderInput {
+    width: 50%;
+}
+
+.dataTables_scrollBody table {
+    background-color: purple !important;
+}
+.dataTables_scrollHead table {
+    background-color: purple !important;
+}
+
+#myTableBox .box {
+    background-color: purple !important;
+}
+
+.main-sidebar {
+    background-color: mediumspringgreen !important;
+}
