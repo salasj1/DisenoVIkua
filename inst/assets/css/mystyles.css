@@ -1,3 +1,11 @@
+.dashboard1 .skin-blue .main-sidebar {
+    background-color: blue !important;
+}
+
+.dashboard2 .skin-blue .main-sidebar {
+    background-color: red !important;
+}
+
 #barPlotAle {
     height: 300px;
     width: 100%;
