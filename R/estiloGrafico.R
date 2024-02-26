@@ -1,5 +1,3 @@
-# estiloGrafico.R
-
 library(ggplot2)
 # Define la función aplicaEstilo
 aplicaEstilo <- function(grafico, background_color = 'white') {
