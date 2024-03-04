@@ -2,6 +2,7 @@ function applyDashboardStyle(color) {
     var dashboards = document.querySelectorAll(".dashboard");
     dashboards.forEach(function(dashboard) {
         dashboard.style.backgroundColor = color;
+
     });
 }
 document.addEventListener("DOMContentLoaded", function() {
