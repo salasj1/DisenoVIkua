@@ -1,4 +1,4 @@
-library(ggplot2)
+
 # Define la función aplicaEstilo
 aplicaEstilo <- function(grafico, background_color = 'white', fill_color = 'blue', border_color = 'black', titulo = "", etiqueta_x = "", etiqueta_y = "", posicion_leyenda = "top",
                          family_title = "sans", size_title = 12, family_axis_x = "sans", size_axis_x = 12, family_axis_y = "sans", size_axis_y = 12) {

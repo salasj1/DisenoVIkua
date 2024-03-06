@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 body{
-    background-color: #F9F8FD;
+    background-color: #F9F8FD !important;
 }
 #barPlotAle {
     height: 300px;
@@ -121,18 +121,56 @@ body{
     gap: 10px;
     position: relative;
     flex: 0 0 auto;
+    filter: drop-shadow(0px 8px 24px rgba(0, 19, 50, 0.15));
 }
-
-.menu-administrador .frame-3 {
+.boton-vikua {
+    border: 1px solid transparent;
+    cursor: pointer;
+    touch-action: manipulation;
+    box-sizing: border-box;
     display: inline-flex;
     align-items: center;
     gap: 17px;
     position: relative;
-    flex: 0 0 auto;
-    background: transparent;
-    border-color:transparent;
+    background: #FFFFFF;
+    border: 1px solid #D7D8E1;
     padding: 10px 15px;
+    color:#001332;
     width: 193px;
+    margin-top: -1px;
+    font-family: 'Poppins', Helvetica;
+    border-radius: 5px ;
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 0.2px;
+    line-height: 22.2px;
+    white-space: nowrap;
+}
+
+.boton-vikua:active {
+    display: flex;
+    width: 193px;
+    align-items: center;
+    gap: 17px;
+    padding: 10px 15px;
+    position: relative;
+    background: #192072 !important;
+    box-sizing: border-box;
+    border-radius: 5px !important;
+    color: #ffffff !important;
+    border-color:transparent !important;
+    margin-top: -1px;
+    font-family: "Poppins", Helvetica;
+    font-weight: 500 !important;
+    font-size: 13px;
+    letter-spacing: 0.2px;
+    line-height: 22.2px;
+    white-space: nowrap;
+    background-image: none;
+}
+.boton-vikua:hover {
+    background: linear-gradient(270deg, #FFD83E 0%, #3BBEFC 100%);  ;
+    color: #ffffff;
 }
 
 .menu-administrador .group-2 {
@@ -224,22 +262,9 @@ body{
     white-space: nowrap;
 }
 
-.menu-administrador .frame-6 {
-    display: flex;
-    width: 193px;
-    align-items: center;
-    gap: 17px;
-    padding: 10px 15px;
-    position: absolute;
-    top: 39px;
-    left: 0;
-    background-color: #0089ba;
-    border-radius: 5px;
-    color: #ffffff;
-    border-color:transparent;
-}
 
-.menu-administrador .rectangle-4 {
+
+.menu-administrador .rectangle-4:active:hover {
     position: absolute;
     width: 7px;
     height: 15px;
@@ -250,7 +275,7 @@ body{
     border-color: #ffffff;
 }
 
-.menu-administrador .rectangle-5 {
+.menu-administrador .rectangle-5:hover:active {
     position: absolute;
     width: 7px;
     height: 8px;
@@ -261,7 +286,7 @@ body{
     border-color: #ffffff;
 }
 
-.menu-administrador .rectangle-6 {
+.menu-administrador .rectangle-6:hover:active {
     position: absolute;
     width: 7px;
     height: 5px;
@@ -290,7 +315,7 @@ body{
     align-items: flex-start;
     gap: 26px;
     position: absolute;
-    top: 99px;
+    top: 40px;
 }
 
 .menu-administrador .overlap-group {
@@ -360,22 +385,8 @@ body{
     border-radius: 3px 0px 0px 3px;
     transform: rotate(180deg);
 }
-.menu-administrador .icono-boton-presionado {
-    position: relative;
-    width: 15px;
-    height: 16px;
-    background-image: url('../img/icon_presionado.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.menu-administrador .icono-boton-apagado {
-    position: relative;
-    width: 15px;
-    height: 16px;
-    background-image: url('../img/icon.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+
+
 .dashboard{
     min-height: 990px;
 }

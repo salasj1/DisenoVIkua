@@ -1,3 +1,9 @@
+
+//importante para el boton
+function resetClass(id) {
+    var el = document.getElementById(id);
+    el.className = 'boton-vikua';
+}
 function applyDashboardStyle(color) {
     var dashboards = document.querySelectorAll(".dashboard");
     dashboards.forEach(function(dashboard) {
@@ -7,13 +13,14 @@ function applyDashboardStyle(color) {
 }
 document.addEventListener("DOMContentLoaded", function() {
 
-
     var myButton = document.getElementById("myButton");
     if (myButton) {
         myButton.onclick = function() {
             alert("Presionaste el boton con el nuevo cambio!");
         }
     }
+
+
 
     var textInputAle = document.getElementById("textInputAle");
     if (textInputAle) {

@@ -1,22 +1,13 @@
 library(shiny)
 library(shinyjs)
 
-botonpresionado <- function(id, label) {
-  tags$button(id = id, class = 'text-wrapper-4 frame-6 btn btn-default',
+boton<- function(id, label) {
+  tags$button(id = id, class = 'boton-vikua',
               tags$div(class = 'group-2',
-                       tags$div(class = 'rectangle-4'),
-                       tags$div(class = 'rectangle-5'),
-                       tags$div(class = 'rectangle-6')
-              ),
-              label
-  )
-}
-boton_no_presionado <- function(id, label) {
-  tags$button(id = id, class = 'text-wrapper-2 frame-3 btn btn-default',
-              tags$div(class = 'group-2',
-                       tags$div(class = 'rectangle'),
-                       tags$div(class = 'rectangle-2'),
-                       tags$div(class = 'rectangle-3')
+                       tags$div(class = 'rectangle-4 rectangle'),
+                       tags$div(class = 'rectangle-5 rectangle-2'),
+                       tags$div(class = 'rectangle-6 rectangle-3')
+
               ),
               label
   )
@@ -29,13 +20,12 @@ sidebar <- function() {
                     tags$div(class = 'div',
                              tags$div(class = 'group-3',
                                       tags$div(class = 'text-wrapper-3', "SERVICIOS"),
-                                      botonpresionado("mis_tableros", "Mis tableros")
-                                      ,
                                       tags$div(class = 'frame-wrapper',
                                                tags$div(class = 'frame-2',
-                                                        boton_no_presionado("tableros_vikua", "Tableros Vikua"),
-                                                        boton_no_presionado("insights", "Insights"),
-                                                        boton_no_presionado("data_player", "Data Player"),
+                                                        boton("mis_tableros", "Mis tableros"),
+                                                        boton("tableros_vikua", "Tableros Vikua"),
+                                                        boton("insights", "Insights"),
+                                                        boton("data_player", "Data Player"),
                                                )
                                       )
                              ),
@@ -52,24 +42,24 @@ sidebar <- function() {
                              tags$div(class = 'frame',
                                       tags$div(class = 'div-wrapper', tags$div(class = 'text-wrapper', "DATA")),
                                       tags$div(class = 'frame-2',
-                                               boton_no_presionado("mi_data", "Mi data"),
-                                               boton_no_presionado("data_vikua", "Data Vikua"),
+                                               boton("mi_data", "Mi data"),
+                                               boton("data_vikua", "Data Vikua"),
                                                tags$div(class = 'frame-4',
                                                         tags$div(class = 'div-wrapper', tags$div(class = 'text-wrapper', "MIEMBROS")),
                                                         tags$div(class = 'frame-2',
-                                                                 boton_no_presionado("usuarios", "Usuarios"),
-                                                                 boton_no_presionado("empresas", "Empresas")
+                                                                 boton("usuarios", "Usuarios"),
+                                                                 boton("empresas", "Empresas")
                                                         )
                                                )),
                              ),
                              tags$div(class = 'frame-5',
                                       tags$div(class = 'div-wrapper', tags$div(class = 'text-wrapper', "CONFIGURACIONES")),
                                       tags$div(class = 'frame-2',
-                                               boton_no_presionado("administradores", "Administradores"),
-                                               boton_no_presionado("modo_dia", "Modo día"),
-                                               boton_no_presionado("mi_cuenta", "Mi cuenta"),
-                                               boton_no_presionado("contrasena", "Contraseña"),
-                                               boton_no_presionado("salir", "Salir")
+                                               boton("administradores", "Administradores"),
+                                               boton("modo_dia", "Modo día"),
+                                               boton("mi_cuenta", "Mi cuenta"),
+                                               boton("contrasena", "Contraseña"),
+                                               boton("salir", "Salir")
                                       )
 
                              )
