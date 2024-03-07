@@ -35,7 +35,6 @@ body{
 .main-panel {
     position: absolute;
     left: 266px;
-    top: 100px;
 }
 #miImagen{
     vertical-align: middle;
@@ -49,19 +48,18 @@ body{
     align-items: center;
     padding: 19px 60px 19px 40px;
     gap: 10px;
-    position: absolute;
+    position: relative;
     width: 1188px;
     height: 75px;
-    left: 230px;
-    top: 5px;
     background: #FFFFFF;
     box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.15);
+    margin-block: 20px;
 }
 .menu-administrador {
     width: 230px;
     height: 989px;
     position: absolute;
-    left: -5px;
+    left: -15px;
 }
 
 .menu-administrador .group {
@@ -169,17 +167,29 @@ body{
     background-image: none;
 }
 .boton-vikua:hover {
-    background: linear-gradient(270deg, #FFD83E 0%, #3BBEFC 100%);  ;
+    background: linear-gradient(270deg, #FFD83E 0%, #3BBEFC 100%);
     color: #ffffff;
 }
-
-.menu-administrador .group-2 {
+.texto-boton-vikua {
+    position: relative;
+    font-weight: 400;
+    block-size: auto;
+    white-space: nowrap;
+    margin-left: 10px;
+    margin-top: -3px;
+}
+.boton-vikua-base {
+    display: inline-flex;
+    flex-direction: row;
+    gap:17px;
+}
+.group-2 {
     position: relative;
     width: 15px;
     height: 15px;
 }
 
-.menu-administrador .rectangle {
+.rectangle {
     position: absolute;
     width: 7px;
     height: 15px;
@@ -190,7 +200,7 @@ body{
     border-color: #6a7384;
 }
 
-.menu-administrador .rectangle-2 {
+.rectangle-2 {
     position: absolute;
     width: 7px;
     height: 8px;
@@ -201,7 +211,7 @@ body{
     border-color: #6a7384;
 }
 
-.menu-administrador .rectangle-3 {
+.rectangle-3 {
     position: absolute;
     width: 7px;
     height: 5px;
@@ -212,7 +222,7 @@ body{
     border-color: #6a7384;
 }
 
-.menu-administrador .text-wrapper-2 {
+.text-wrapper-2 {
     position: relative;
     margin-top: -1px;
     font-family: 'Poppins', Helvetica;
@@ -224,7 +234,7 @@ body{
     white-space: nowrap;
 }
 
-.menu-administrador .frame-4 {
+.frame-4 {
     display: inline-flex;
     flex-direction: column;
     align-items: flex-start;
@@ -233,7 +243,7 @@ body{
     top: 5px !important;
 }
 
-.menu-administrador .frame-5 {
+.frame-5 {
     display: inline-flex;
     flex-direction: column;
     align-items: flex-start;
@@ -242,14 +252,14 @@ body{
     top: 520px;
 }
 
-.menu-administrador .group-3 {
+.group-3 {
     position: absolute;
     width: 195px;
     height: 227px;
     top: -40px;
 }
 
-.menu-administrador .text-wrapper-3 {
+.text-wrapper-3 {
     position: absolute;
     top: 0;
     left: 20px;
@@ -264,7 +274,7 @@ body{
 
 
 
-.menu-administrador .rectangle-4:active:hover {
+.rectangle-4:active:hover {
     position: absolute;
     width: 7px;
     height: 15px;
@@ -275,7 +285,7 @@ body{
     border-color: #ffffff;
 }
 
-.menu-administrador .rectangle-5:hover:active {
+.rectangle-5:hover:active {
     position: absolute;
     width: 7px;
     height: 8px;
@@ -286,7 +296,7 @@ body{
     border-color: #ffffff;
 }
 
-.menu-administrador .rectangle-6:hover:active {
+.rectangle-6:hover:active {
     position: absolute;
     width: 7px;
     height: 5px;
@@ -297,7 +307,7 @@ body{
     border-color: #ffffff;
 }
 
-.menu-administrador .text-wrapper-4 {
+.text-wrapper-4 {
     position: relative;
     margin-top: -1px;
     font-family: "Poppins", Helvetica;
@@ -309,7 +319,7 @@ body{
     white-space: nowrap;
 }
 
-.menu-administrador .frame-wrapper {
+.frame-wrapper {
     display: inline-flex;
     flex-direction: column;
     align-items: flex-start;
@@ -335,7 +345,7 @@ body{
     border-radius: 5px;
 }
 
-.menu-administrador .rectangle-7 {
+.rectangle-7 {
     position: absolute;
     width: 48px;
     height: 48px;

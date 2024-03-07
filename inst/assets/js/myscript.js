@@ -1,17 +1,20 @@
-
-//importante para el boton
+//Importante para los botones
 function resetClass(id) {
     var el = document.getElementById(id);
+    console.log('Elemento a resetear:', el); // Imprime el elemento que se va a resetear
     el.className = 'boton-vikua';
 }
-function applyDashboardStyle(color) {
-    var dashboards = document.querySelectorAll(".dashboard");
-    dashboards.forEach(function(dashboard) {
-        dashboard.style.backgroundColor = color;
 
-    });
-}
+
+
 document.addEventListener("DOMContentLoaded", function() {
+
+    // importante para los botones
+    var buttons = document.querySelectorAll('button');
+    buttons.forEach(function(button) {
+        resetClass(button.id);
+    });
+
 
     var myButton = document.getElementById("myButton");
     if (myButton) {

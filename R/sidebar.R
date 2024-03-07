@@ -14,6 +14,7 @@ boton<- function(id, label) {
 }
 
 
+
 sidebar <- function() {
   tags$div(class = 'menu-administrador',
            tags$div(class = 'group',
@@ -22,7 +23,7 @@ sidebar <- function() {
                                       tags$div(class = 'text-wrapper-3', "SERVICIOS"),
                                       tags$div(class = 'frame-wrapper',
                                                tags$div(class = 'frame-2',
-                                                        boton("mis_tableros", "Mis tableros"),
+                                                        actionBttn(inputId = "my_button2", label = cuadros("Mis Tableros"), class = "boton-vikua",size = "lg"),
                                                         boton("tableros_vikua", "Tableros Vikua"),
                                                         boton("insights", "Insights"),
                                                         boton("data_player", "Data Player"),
