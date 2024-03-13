@@ -54,6 +54,7 @@ body{
     background: #FFFFFF;
     box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.15);
     margin-block: 20px;
+
 }
 .menu-administrador {
     width: 230px;
@@ -121,6 +122,324 @@ body{
     flex: 0 0 auto;
     filter: drop-shadow(0px 8px 24px rgba(0, 19, 50, 0.15));
 }
+
+/*value Box*/
+.value-box1{
+    width: 550px !important;
+    border-color: #FFFFFF !important;
+    border-left: 15px solid #00a7c5 !important;
+
+}
+.value-box2{
+    width: 550px !important;
+    border-color: #FFFFFF !important;
+    border-left: 15px solid #845EC2 !important;
+
+}
+.value-box3{
+    width: 264px !important;
+    Height: 129px !important;
+    border-color: #FFFFFF !important;
+}
+.value-box-icon{
+    margin-left: -60px;
+}
+.value-box-title {
+    height: 22px;
+    color: #9ca4c3;
+    font-family: Poppins, sans-serif;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    text-align: left;
+    margin-left: -70px;
+    margin-bottom: 0 !important;
+    margin-top: -5px !important;
+}
+.value-box-text-2 {
+    flex-shrink: 0 !important;
+    flex-basis: auto !important;
+    height: 44px;
+    color: #000000;
+    font-family: Poppins, sans-serif;
+    font-size: 26px !important;
+    font-weight: 700 !important;
+    line-height: 40px !important;
+
+    margin-left: -70px;
+}
+.value-box-text-3 {
+    flex-shrink: 0 !important;
+    flex-basis: auto !important;
+    height: 17px;
+    color: #969696;
+    font-family: Poppins, sans-serif;
+    font-size: 10px !important;
+    font-weight: 400 !important;
+    line-height: 0 !important;
+    margin-left: -70px;
+}
+.value-box3 .value-box-title {
+    height: 22px;
+    color: #9ca4c3;
+    font-family: Poppins, sans-serif;
+    font-size: 13px !important;
+    font-weight: 400 !important;
+    text-align: left;
+
+    margin-bottom: 0 !important;
+    margin-top: -5px !important;
+    margin-left: 0px;
+}
+.value-box3 .value-box-text-2 {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 44px;
+    color: #000000;
+    font-family: Poppins, sans-serif;
+    font-size: 26px !important;
+    font-weight: 700 !important;
+    line-height: 44px !important;
+    text-align: left !important;
+    white-space: nowrap !important;
+    letter-spacing: -0.39px !important;
+    z-index: 2;
+    margin-left: 0px;
+
+
+}
+.value-box3 .value-box-text-3 {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 17px;
+    color: #969696;
+    font-family: Poppins, sans-serif;
+    font-size: 10px !important;
+    font-weight: 400 !important;
+    line-height: 17px !important;
+    text-align: left !important;
+    white-space: nowrap !important;
+    letter-spacing: 0.15px !important;
+    z-index: 6 !important;
+    margin-left: 0px;
+}
+    /*Card1*/
+.card {
+    margin-block: 1rem !important;
+    width: 18rem;
+}
+.card .card-header{
+    position: relative;
+    width:100%;
+    height: 178px;
+    top: 0;
+    left: 0;
+    background-color: #E8E9F1;
+    border-radius: 5px 5px 0px 0px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*Card2*/
+
+.card2 {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 13px;
+    position: relative;
+    width: 550.5px;
+    height: 129px;
+    margin-block: 20px;
+    padding: 17px 37px 17px 37px;
+    background: #ffffff;
+    border-radius: 5px;
+}
+
+.card2 .box {
+    flex-shrink: 0;
+    position: absolute;
+    width: 12px;
+    height: 129px;
+    top: 0;
+    left: 0;
+    background: #00a7c5;
+    z-index: 7;
+    border-radius: 5px 0 0 5px;
+}
+
+.card2 .wrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 32px;
+    position: relative;
+    width: 243px;
+}
+
+.card2 .pic {
+    flex-shrink: 0;
+    position: relative;
+    width: 54px;
+    height: 72px;
+    background-size: cover;
+    z-index: 1;
+}
+
+.card2 .box-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 1px;
+    position: relative;
+    width: 157px;
+    z-index: 2;
+}
+
+.card2 .text {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 22px;
+    color: #9ca4c3;
+    font-family: Poppins, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 22px;
+    text-align: left;
+    white-space: nowrap;
+    letter-spacing: 0.2px;
+    z-index: 3;
+}
+
+.card2 .section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: -7px;
+    position: relative;
+    width: 103px;
+    z-index: 4;
+}
+
+.card2 .text-2 {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 44px;
+    color: #000000;
+    font-family: Poppins, sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 44px;
+    text-align: left;
+    white-space: nowrap;
+    letter-spacing: -0.39px;
+    z-index: 5;
+}
+
+.card2 .text-3 {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 17px;
+    color: #969696;
+    font-family: Poppins, sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 17px;
+    text-align: left;
+    white-space: nowrap;
+    letter-spacing: 0.15px;
+    z-index: 6;
+}
+/*Copia*/
+.card bs4Dash card-primary card-outline {
+
+}
+
+/*Card3*/
+.card3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    gap: 13px;
+    position: relative;
+    width: 264px;
+    padding: 17px 37px 17px 37px;
+    background: #ffffff;
+    border-radius: 5px;
+    margin-block: 20px;
+}
+
+.card3 .text {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 21px;
+    color: #9ca4c3;
+    font-family: Poppins, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20.521px;
+    text-align: left;
+    white-space: nowrap;
+    letter-spacing: 0.18px;
+}
+
+.card3 .section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    position: relative;
+    width: 103px;
+    z-index: 1;
+}
+
+.card3 .text-2 {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 44px;
+    color: #000000;
+    font-family: Poppins, sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 44px;
+    text-align: left;
+    white-space: nowrap;
+    letter-spacing: -0.39px;
+    z-index: 2;
+}
+
+.card3 .text-3 {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 17px;
+    color: #969696;
+    font-family: Poppins, sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 17px;
+    text-align: left;
+    white-space: nowrap;
+    letter-spacing: 0.15px;
+    z-index: 3;
+}
+
+/*Boton-Vikua*/
 .boton-vikua {
     border: 1px solid transparent;
     cursor: pointer;
@@ -144,7 +463,6 @@ body{
     line-height: 22.2px;
     white-space: nowrap;
 }
-
 .boton-vikua:active {
     display: flex;
     width: 193px;
@@ -175,13 +493,59 @@ body{
     font-weight: 400;
     block-size: auto;
     white-space: nowrap;
-    margin-left: 10px;
     margin-top: -3px;
 }
 .boton-vikua-base {
     display: inline-flex;
     flex-direction: row;
     gap:17px;
+}
+/*boton-sidebar*/
+.boton-sidebar {
+    border: 1px solid transparent;
+    cursor: pointer;
+    touch-action: manipulation;
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    gap: 17px;
+    position: relative;
+    background: #001232;
+    padding: 10px 15px;
+    width: 193px;
+    margin-top: -1px;
+    font-family: "Poppins", Helvetica;
+    font-weight: 400;
+    color: #6a7384;
+    font-size: 13px;
+    letter-spacing: 0.2px;
+    line-height: 22.2px;
+    white-space: nowrap;
+}
+.boton-sidebar:hover {
+    background: #001232;
+    color: #ffffff;
+}
+.boton-sidebar:active {
+    display: flex;
+    width: 193px;
+    align-items: center;
+    gap: 17px;
+    padding: 10px 15px;
+    position: relative;
+    background: #0089ba !important;
+    box-sizing: border-box;
+    border-radius: 5px !important;
+    color: #ffffff !important;
+    border-color:transparent !important;
+    margin-top: -1px;
+    font-family: "Poppins", Helvetica;
+    font-weight: 500 !important;
+    font-size: 13px;
+    letter-spacing: 0.2px;
+    line-height: 22.2px;
+    white-space: nowrap;
+    background-image: none;
 }
 .group-2 {
     position: relative;
@@ -221,11 +585,44 @@ body{
     border: 1px solid;
     border-color: #6a7384;
 }
+.rectangle:active:hover {
+    position: absolute;
+    width: 7px;
+    height: 15px;
+    top: 0;
+    left: 0;
+    border-radius: 1px;
+    border: 1px solid;
+    border-color: #ffffff;
+}
+
+.rectangle-2:hover:active {
+    position: absolute;
+    width: 7px;
+    height: 8px;
+    top: 0;
+    left: 8px;
+    border-radius: 1px;
+    border: 1px solid;
+    border-color: #ffffff;
+}
+
+.rectangle-3:hover:active {
+    position: absolute;
+    width: 7px;
+    height: 5px;
+    top: 10px;
+    left: 8px;
+    border-radius: 1px;
+    border: 1px solid;
+    border-color: #ffffff;
+}
+
 
 .text-wrapper-2 {
     position: relative;
     margin-top: -1px;
-    font-family: 'Poppins', Helvetica;
+    font-family: Poppins, Helvetica;
     font-weight: 400;
     color: #6a7384;
     font-size: 13px;
@@ -274,38 +671,6 @@ body{
 
 
 
-.rectangle-4:active:hover {
-    position: absolute;
-    width: 7px;
-    height: 15px;
-    top: 0;
-    left: 0;
-    border-radius: 1px;
-    border: 1px solid;
-    border-color: #ffffff;
-}
-
-.rectangle-5:hover:active {
-    position: absolute;
-    width: 7px;
-    height: 8px;
-    top: 0;
-    left: 8px;
-    border-radius: 1px;
-    border: 1px solid;
-    border-color: #ffffff;
-}
-
-.rectangle-6:hover:active {
-    position: absolute;
-    width: 7px;
-    height: 5px;
-    top: 10px;
-    left: 8px;
-    border-radius: 1px;
-    border: 1px solid;
-    border-color: #ffffff;
-}
 
 .text-wrapper-4 {
     position: relative;
@@ -365,6 +730,7 @@ body{
     background-image: url('../img/group-1.png');
     background-repeat: no-repeat;
     background-size: cover;
+
 }
 
 .menu-administrador .group-4 {
@@ -405,3 +771,6 @@ body{
     display: none;
 }
 
+.hidden-text {
+    display: none;
+}

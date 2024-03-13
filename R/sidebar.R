@@ -1,20 +1,6 @@
 library(shiny)
 library(shinyjs)
 
-boton<- function(id, label) {
-  tags$button(id = id, class = 'boton-vikua',
-              tags$div(class = 'group-2',
-                       tags$div(class = 'rectangle-4 rectangle'),
-                       tags$div(class = 'rectangle-5 rectangle-2'),
-                       tags$div(class = 'rectangle-6 rectangle-3')
-
-              ),
-              label
-  )
-}
-
-
-
 sidebar <- function() {
   tags$div(class = 'menu-administrador',
            tags$div(class = 'group',
@@ -23,10 +9,10 @@ sidebar <- function() {
                                       tags$div(class = 'text-wrapper-3', "SERVICIOS"),
                                       tags$div(class = 'frame-wrapper',
                                                tags$div(class = 'frame-2',
-                                                        actionBttn(inputId = "my_button2", label = cuadros("Mis Tableros"), class = "boton-vikua",size = "lg"),
-                                                        boton("tableros_vikua", "Tableros Vikua"),
-                                                        boton("insights", "Insights"),
-                                                        boton("data_player", "Data Player"),
+                                                        actionBttn(inputId = "mis_tableros", label = cuadros("Mis Tableros"), class = "action-button boton-sidebar",size = "lg"),
+                                                        actionBttn(inputId = "tableros_vikua", label = cuadros("Tableros Vikua"), class = "action-button boton-sidebar",size = "lg"),
+                                                        actionBttn(inputId = "insights", label = cuadros("Insights"), class = "action-button boton-sidebar",size = "lg"),
+                                                        actionBttn(inputId = "data_player", label = cuadros("Data Player"), class = "action-button boton-sidebar",size = "lg"),
                                                )
                                       )
                              ),
@@ -43,24 +29,24 @@ sidebar <- function() {
                              tags$div(class = 'frame',
                                       tags$div(class = 'div-wrapper', tags$div(class = 'text-wrapper', "DATA")),
                                       tags$div(class = 'frame-2',
-                                               boton("mi_data", "Mi data"),
-                                               boton("data_vikua", "Data Vikua"),
+                                               actionBttn(inputId = "mi_data", label = cuadros("Mi data"), class = "action-button boton-sidebar",size = "lg"),
+                                               actionBttn(inputId = "data_vikua", label = cuadros("Data Vikua"), class = "action-button boton-sidebar",size = "lg"),
                                                tags$div(class = 'frame-4',
                                                         tags$div(class = 'div-wrapper', tags$div(class = 'text-wrapper', "MIEMBROS")),
                                                         tags$div(class = 'frame-2',
-                                                                 boton("usuarios", "Usuarios"),
-                                                                 boton("empresas", "Empresas")
+                                                                 actionBttn(inputId = "usuarios", label = cuadros("Usuarios"), class = "action-button boton-sidebar",size = "lg"),
+                                                                 actionBttn(inputId = "empresas", label = cuadros("Empresas"), class = "action-button boton-sidebar",size = "lg")
                                                         )
                                                )),
                              ),
                              tags$div(class = 'frame-5',
                                       tags$div(class = 'div-wrapper', tags$div(class = 'text-wrapper', "CONFIGURACIONES")),
                                       tags$div(class = 'frame-2',
-                                               boton("administradores", "Administradores"),
-                                               boton("modo_dia", "Modo día"),
-                                               boton("mi_cuenta", "Mi cuenta"),
-                                               boton("contrasena", "Contraseña"),
-                                               boton("salir", "Salir")
+                                               actionBttn(inputId = "administradores", label = cuadros("Administradores"), class = "action-button boton-sidebar",size = "lg"),
+                                               actionBttn(inputId = "modo_dia", label = cuadros("Modo día"), class = "action-button boton-sidebar",size = "lg"),
+                                               actionBttn(inputId = "mi_cuenta", label = cuadros("Mi cuenta"), class = "action-button boton-sidebar",size = "lg"),
+                                               actionBttn(inputId = "contrasena", label = cuadros("Contraseña"), class = "action-button boton-sidebar",size = "lg"),
+                                               actionBttn(inputId = "salir", label = cuadros("Salir"), class = "action-button boton-sidebar",size = "lg")
                                       )
 
                              )
