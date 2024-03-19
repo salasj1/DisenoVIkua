@@ -1,19 +1,23 @@
 document.addEventListener("DOMContentLoaded", function() {
-
+    /*var textInputs = document.querySelectorAll('input[type="text"]');
+    textInputs.forEach(function(textInput) {
+        textInput.setAttribute('placeholder', 'Introduce un texto');
+        textInput.classList.add('my-placeholder-class');
+    });*/
     var buttons = document.querySelectorAll('button');
     buttons.forEach(function(button) {
-        if (button.className.includes("action-button boton-sidebar")) {
-            button.className = 'boton-sidebar';
+        if (button.className.includes("boton-sidebar")) {
+            button.classList.remove("bttn-unite");
         }
     });
     // importante para los botones
+
     var buttons = document.querySelectorAll('button');
     buttons.forEach(function(button) {
-        if (button.className.includes("action-button boton-vikua")) {
-            button.className = 'boton-vikua';
+        if (button.className.includes("boton-vikua")) {
+            button.classList.remove("bttn-unite");
         }
     });
-
     var buttons = document.querySelectorAll(".boton-sidebar, .boton-vikua-base");
     buttons.forEach(function(button) {
         button.onmousedown = function(event) {
@@ -29,15 +33,33 @@ document.addEventListener("DOMContentLoaded", function() {
             });
         }
     });
+    //Para el TextInput
+    var textInputs = document.querySelectorAll('input[type="text"]');
+    textInputs.forEach(function(textInput) {
+        textInput.setAttribute('placeholder', 'Introduce un texto');
+        textInput.classList.add('my-placeholder-class');
 
+        // Crear un nuevo elemento div para mostrar el mensaje de error
+        var errorMsg = document.createElement('div');
+        errorMsg.classList.add('error-message'); // Agregar la clase error-message
 
-    var myButton = document.getElementById("myButton");
-    if (myButton) {
-        myButton.onclick = function() {
-            alert("Presionaste el boton con el nuevo cambio!");
-        }
-    }
+        textInput.parentNode.insertBefore(errorMsg, textInput.nextSibling); // Insertar el mensaje de error después del textInput
 
+        textInput.addEventListener('input', function() {
+            if (textInput.value === '') {
+                errorMsg.textContent = 'Este campo es obligatorio'; // Cambiar el texto del mensaje de error
+                errorMsg.style.display = 'block'; // Mostrar el mensaje de error
+                errorMsg.classList.add('error-mensaje-input'); // Agregar la clase error-input al mensaje de error
+
+                textInput.classList.add('error-input'); // Agregar la clase error-input al textInput
+                textInput.previousElementSibling.classList.add('error-input'); // Agregar la clase error-input al label del textInput
+            } else {
+                errorMsg.style.display = 'none'; // Ocultar el mensaje de error si el textInput no está vacío
+                textInput.classList.remove('error-input'); // Eliminar la clase error-input del textInput
+                textInput.previousElementSibling.classList.remove('error-input'); // Eliminar la clase error-input del label del textInput
+            }
+        });
+    });
 
 
     var textInputAle = document.getElementById("textInputAle");

@@ -9,7 +9,7 @@ sidebar <- function() {
                                       tags$div(class = 'text-wrapper-3', "SERVICIOS"),
                                       tags$div(class = 'frame-wrapper',
                                                tags$div(class = 'frame-2',
-                                                        actionBttn(inputId = "mis_tableros", label = cuadros("Mis Tableros"), class = "action-button boton-sidebar",size = "lg"),
+                                                        actionBttn(inputId = "mis_tableros", label = cuadros("Mis Tableros"), class = "boton-sidebar", ),
                                                         actionBttn(inputId = "tableros_vikua", label = cuadros("Tableros Vikua"), class = "action-button boton-sidebar",size = "lg"),
                                                         actionBttn(inputId = "insights", label = cuadros("Insights"), class = "action-button boton-sidebar",size = "lg"),
                                                         actionBttn(inputId = "data_player", label = cuadros("Data Player"), class = "action-button boton-sidebar",size = "lg"),

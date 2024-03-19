@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    margin:0;
+    padding:0;
+
+}
 body{
     background-color: #F9F8FD !important;
 }
@@ -35,6 +40,9 @@ body{
 .main-panel {
     position: absolute;
     left: 266px;
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
 }
 #miImagen{
     vertical-align: middle;
@@ -56,6 +64,7 @@ body{
     margin-block: 20px;
 
 }
+
 .menu-administrador {
     width: 230px;
     height: 989px;
@@ -126,12 +135,14 @@ body{
 /*value Box*/
 .value-box1{
     width: 550px !important;
+    height: 128px !important;
     border-color: #FFFFFF !important;
     border-left: 15px solid #00a7c5 !important;
 
 }
 .value-box2{
     width: 550px !important;
+    height: 128px !important;
     border-color: #FFFFFF !important;
     border-left: 15px solid #845EC2 !important;
 
@@ -438,44 +449,108 @@ body{
     letter-spacing: 0.15px;
     z-index: 3;
 }
+/*Input*/
+.input-label{
+    font-family: 'Poppins', Helvetica;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 171.01%;
+    letter-spacing: 0.015em;
+}
+.shiny-bound-input{
+    box-sizing: border-box;
+    position: relative;
+    width: 360px;
+    height: 38px;
+    background: #FFFFFF;
+    border: 1px solid #D8D6D6;
+    border-radius: 5px;
+    padding-left: 18px;
+    font-family: 'Poppins', Helvetica;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 15px;
+    letter-spacing: 0.004em;
+    color: #000000;
+}
+.my-placeholder-class::placeholder {
+    position: absolute;
+    width: 150px;
+    height: 15px;
+    top:10px;
+    left: 17px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 15px;
+    letter-spacing: 0.004em;
+    color: #676666;
+}
+.error-input {
+    border-color: red !important;
+    color: red !important;
 
+}
+.error-mensaje-input {
+    position: absolute;
+    width: 132px;
+    height: 15px;
+    /* caption */
+    font-family: 'Poppins',Helvetica;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 15px;
+    letter-spacing: 0.004em;
+    color: #D80027;
+}
 /*Boton-Vikua*/
+
 .boton-vikua {
-    border: 1px solid transparent;
+    border: 1px solid transparent !important;
     cursor: pointer;
     touch-action: manipulation;
     box-sizing: border-box;
-    display: inline-flex;
+    display: flex;
     align-items: center;
     gap: 17px;
     position: relative;
-    background: #FFFFFF;
-    border: 1px solid #D7D8E1;
-    padding: 10px 15px;
-    color:#001332;
-    width: 193px;
-    margin-top: -1px;
-    font-family: 'Poppins', Helvetica;
-    border-radius: 5px ;
-    font-weight: 400;
-    font-size: 13px;
+    background: #FFFFFF !important;
+    border: 1px solid #D7D8E1 !important;
+    padding: 0px 50px 0px 10px !important;
+    color: #001332 !important;
+    width: max-content !important;
+    height: 40.2px;
+    font-family: 'Poppins', Helvetica !important;
+    border-radius: 5px;
+    font-weight: 400 !important;
+    font-size: 13px !important;
     letter-spacing: 0.2px;
     line-height: 22.2px;
     white-space: nowrap;
 }
+.boton-vikua:hover {
+    background: linear-gradient(270deg, #FFD83E 0%, #3BBEFC 100%) !important; ;
+    color: #ffffff !important;
+    width: max-content !important;
+    height: 40.2px;
+}
 .boton-vikua:active {
     display: flex;
-    width: 193px;
+    width: max-content !important;
+    height: 40.2px;
     align-items: center;
     gap: 17px;
-    padding: 10px 15px;
+    padding: 0px 50px 0px 10px !important;
     position: relative;
     background: #192072 !important;
     box-sizing: border-box;
     border-radius: 5px !important;
     color: #ffffff !important;
     border-color:transparent !important;
-    margin-top: -1px;
     font-family: "Poppins", Helvetica;
     font-weight: 500 !important;
     font-size: 13px;
@@ -484,10 +559,7 @@ body{
     white-space: nowrap;
     background-image: none;
 }
-.boton-vikua:hover {
-    background: linear-gradient(270deg, #FFD83E 0%, #3BBEFC 100%);
-    color: #ffffff;
-}
+
 .texto-boton-vikua {
     position: relative;
     font-weight: 400;
@@ -500,31 +572,31 @@ body{
     flex-direction: row;
     gap:17px;
 }
+
 /*boton-sidebar*/
 .boton-sidebar {
-    border: 1px solid transparent;
+    border: 1px solid transparent !important;
     cursor: pointer;
     touch-action: manipulation;
     box-sizing: border-box;
-    display: inline-flex;
+    display: flex;
     align-items: center;
     gap: 17px;
     position: relative;
-    background: #001232;
-    padding: 10px 15px;
+    background: #001232 !important;
+    padding: 10px 15px !important;
     width: 193px;
-    margin-top: -1px;
-    font-family: "Poppins", Helvetica;
+    font-family: "Poppins", Helvetica !important;
     font-weight: 400;
-    color: #6a7384;
-    font-size: 13px;
+    color: #6a7384 !important;
+    font-size: 13px !important;
     letter-spacing: 0.2px;
     line-height: 22.2px;
     white-space: nowrap;
 }
 .boton-sidebar:hover {
-    background: #001232;
-    color: #ffffff;
+    background: #001232 !important;
+    color: #ffffff !important;
 }
 .boton-sidebar:active {
     display: flex;
@@ -538,7 +610,7 @@ body{
     border-radius: 5px !important;
     color: #ffffff !important;
     border-color:transparent !important;
-    margin-top: -1px;
+
     font-family: "Poppins", Helvetica;
     font-weight: 500 !important;
     font-size: 13px;
@@ -546,6 +618,166 @@ body{
     line-height: 22.2px;
     white-space: nowrap;
     background-image: none;
+
+}
+.bttn-unite.bttn-default {
+    font-family: "Poppins", Helvetica !important;
+    cursor: pointer !important;
+    touch-action: manipulation !important;
+    box-sizing: border-box !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 17px !important;
+    position: relative !important;
+    background: transparent !important;
+    border: 1px solid transparent !important;
+    padding: 0px 50px 0px 10px !important;
+    color: transparent !important;
+    width: max-content !important;
+    height: 40.2px !important;
+    border-radius: 5px !important;
+    font-weight: 400 !important;
+    font-size: 13px !important;
+    letter-spacing: 0.2px !important;
+    line-height: 22.2px !important;
+    white-space: nowrap !important;
+}
+/*.bttn-no-outline, .bttn-no-outline:active{
+    outline: none;
+    display: flex !important;
+    width: max-content !important;
+    height: 40.2px !important;
+    align-items: center !important;
+    gap: 17px !important;
+    padding: 0px 50px 0px 10px !important;
+    position: relative !important;
+    background: #192072 !important;
+    box-sizing: border-box !important;
+    border-radius: 5px !important;
+    color: #ffffff !important;
+    border-color: transparent !important;
+    font-family: "Poppins", Helvetica !important;
+    font-weight: 500 !important;
+    font-size: 13px !important;
+    letter-spacing: 0.2px !important;
+    line-height: 22.2px !important;
+    white-space: nowrap !important;
+    background-image: none !important;
+}*/
+/*Dropdown*/
+.selectize-label{
+    font-family: 'Poppins', Helvetica;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 171.01%;
+    letter-spacing: 0.015em;
+}
+.selectize-dropdown {
+     box-shadow:unset !important;
+}
+.selectize-input>input{
+    line-height: 20px !important;
+}
+.selectize-input>* {
+    vertical-align: baseline;
+    display: inline-block;
+    zoom: 1;
+    font-family: "Poppins",Helvetica !important;
+    background: #FFFFFF !important;
+    width: max-content !important;
+    font-style: normal !important;
+    font-weight: 450 !important;
+    font-size: 10px !important;
+    line-height: 20px !important;
+    letter-spacing: 0.004em !important;
+    color: black !important;
+}
+
+.selectize-input.full {
+    box-sizing: border-box !important;
+    background: #ffffff !important;
+    border: 1px solid #D8D6D6;
+    border-radius: 5px;
+}
+
+
+.selectize-control.single .selectize-input, .selectize-control.single .selectize-input  {
+    cursor: pointer;
+    line-height: 22px !important;
+}
+selectize-input>input[placeholder] {
+    box-sizing: initial;
+    line-height: 22.2px !important;
+    color: #6a7384 !important;
+    font-size: 13px !important;
+    letter-spacing: 0.2px !important;
+    white-space: nowrap !important;
+}
+.selectize-dropdown, .selectize-dropdown.form-control {
+     box-shadow: unset !important;
+}
+.selectize-dropdown, .selectize-input, .selectize-input  {
+    font-family: "Poppins", Helvetica !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    font-size: 10px !important;
+    line-height: 20px !important;
+    letter-spacing: 0.004em !important;
+    color: #676666 !important;
+
+}
+.selectize-input.focus {
+    border-color: #D8D6D6 !important;
+    outline: 0 !important;
+    box-shadow: inset 0 1px 1px rgb(255, 255, 255),0 0 8px rgb(255, 255, 255) !important;
+}
+.selectize-control.single .selectize-input:not(.no-arrow):after {
+    border-color: unset !important;
+    border-style: unset !important;
+    border-width: unset !important;
+    right: unset !important;
+    content: " " !important;
+    display: block !important;
+    position: absolute !important;
+    top: 15% !important;
+    left: 263px !important;
+    margin-top: 8px !important;
+    width: 12px !important;
+    height: 8px !important;
+    background-image: url('../img/vikua-home-platform-desktop.svg') !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+
+}
+.selectize-control.single .selectize-input:not(.no-arrow).dropdown-active:after {
+    margin-top: 8px !important;
+    transform: rotate(180deg) !important;
+    border-width: unset !important;
+    border-color: transparent transparent #333 transparent !important;
+    color: #000000 !important;
+}
+.selectize-dropdown,.selectize-dropdown.form-control {
+    height: auto !important;
+    padding-left: 1px !important;
+    padding-right: 1px !important;
+    margin: -5px 0 0 0 !important;
+    z-index: 1000 !important;
+    background: #ffffff !important;
+    border: unset !important;
+    border-left: 1px solid rgba(0, 0, 0, 0.15) !important;
+    border-right: 1px solid rgba(0, 0, 0, 0.15) !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15) !important;
+    border-radius: 0px 0px 5px 5px !important;
+}
+.selectize-dropdown .selected {
+    background-color: #fff !important;
+    color: black !important;
+    font-weight: 500 !important;
+    padding-left: 80px; /* Espacio para el icono */
+    background-image: url('../img/check.svg'); /* Ruta al archivo del icono */
+    background-repeat: no-repeat; /* Evita que el icono se repita */
+    background-position: left center; /* Posiciona el icono a la izquierda y centrado verticalmente */
 }
 .group-2 {
     position: relative;
@@ -762,7 +994,10 @@ body{
     transform: rotate(180deg);
 }
 
-
+plotlyOutput {
+    width: fit-content(100%);
+    height: fit-content(100%); /* Ajusta este valor a la altura máxima que desees para el gráfico */
+}
 .dashboard{
     min-height: 990px;
 }
