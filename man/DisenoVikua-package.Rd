@@ -1,25 +1,25 @@
-\name{PaquetePrueba-package}
-\alias{PaquetePrueba-package}
+\name{DisenoVikua-package}
+\alias{DisenoVikua-package}
 {{{\docType{package}
  \title{
- \packageTitle{PaquetePrueba}
+ \packageTitle{DisenoVikua}
  }
  \description{
- \packageDescription{PaquetePrueba}
+ \packageDescription{DisenoVikua}
  }
  \details{
 
  The DESCRIPTION file:
- \packageDESCRIPTION{PaquetePrueba}
- \packageIndices{PaquetePrueba}
+ \packageDESCRIPTION{DisenoVikua}
+ \packageIndices{DisenoVikua}
  ~~ An overview of how to use the package, including the most important ~~
- ~~ functionalias{PaquetePrueba}
+ ~~ functionalias{DisenoVikua}
 \s ~~
 }
 \author{
-\packageAuthor{PaquetePrueba}
+\packageAuthor{DisenoVikua}
 
-Maintainer: \packageMaintainer{PaquetePrueba}
+Maintainer: \packageMaintainer{DisenoVikua}
 }
 \references{
 ~~ Literature or other references for background information ~~
