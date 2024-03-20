@@ -1,9 +1,9 @@
-Package: PaquetePrueba
+Package: DisenoVikua
 Type: Package
 Title: NUEVO
 Version: 0.2
 Author: Alejandro Salas
 Maintainer: Alejandro Salas <alejandrosalas0922@email.com>
-Description: Más detalles sobre lo que hace el paquete.
+Description: Este es una librería para cambiar el diseño de los componentes en R al diseño que utilizan en Vikua
 License:  MIT + file LICENSE
 
