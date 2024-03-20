@@ -18,7 +18,7 @@ mypackageDependencies <- function() {
     htmlDependency(
       name = "mypackage-assets",
       version = "0.2",
-      package = "PaquetePrueba",
+      package = "DisenoVikua",
       src = "assets",
       script = "js/myscript.js",
       stylesheet = "css/mystyles.css"
