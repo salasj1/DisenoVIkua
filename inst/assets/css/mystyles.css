@@ -1,4 +1,8 @@
+/*Este achivo tiene todos los estilo de los componentes*/
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
 *{
     margin:0;
     padding:0;
@@ -44,25 +48,67 @@ body{
     flex-wrap: wrap;
     gap:20px;
 }
-#miImagen{
-    vertical-align: middle;
-    position: relative;
-    width: 180px;
-}
+
+/*HEADER*/
+
 #empresa-header {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     padding: 19px 60px 19px 40px;
-    gap: 10px;
+    gap: 820px;
     position: relative;
+    left: 232px;
     width: 1188px;
     height: 75px;
     background: #FFFFFF;
     box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.15);
-    margin-block: 20px;
+    margin-block: 0 20px;
+}
+.imagen-empresa-header{
+    vertical-align: middle;
+    position: relative;
+    width: 180px;
+}
+.empresa-header-grupo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 30px;
+    position: relative;
+    flex: 0 0 auto;
 
+}
+.empresa-header-grupo .campana {
+    position: relative;
+    width: 19px;
+    height: 22px;
+    background-image:  url('../img/campana.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+.empresa-header-grupo .perfil{
+    position: relative;
+    width: 37px;
+    height: 37px;
+    box-sizing: border-box;
+
+
+    border: 1px solid #BFC0C0;
+
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+    border-radius: 80px;
 }
 
 .menu-administrador {
@@ -507,6 +553,19 @@ body{
     letter-spacing: 0.004em;
     color: #D80027;
 }
+.calendar{
+    position: absolute !important;
+    margin-top: 12px;
+    margin-left: -15px;
+    width: 12px !important;
+    height: 13px !important;
+    background-color: white;
+    background-image: url('../img/calendar.svg') !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    pointer-events: none;
+}
+
 /*Boton-Vikua*/
 
 .boton-vikua {
@@ -701,6 +760,9 @@ body{
     border-radius: 5px;
 }
 
+.selectize-dropdown .active:not(.selected) {
+    color: #3BBEFC !important;
+}
 
 .selectize-control.single .selectize-input, .selectize-control.single .selectize-input  {
     cursor: pointer;
@@ -720,12 +782,11 @@ selectize-input>input[placeholder] {
 .selectize-dropdown, .selectize-input, .selectize-input  {
     font-family: "Poppins", Helvetica !important;
     font-style: normal !important;
-    font-weight: 400 !important;
+    font-weight: 500 !important;
     font-size: 10px !important;
-    line-height: 20px !important;
+    line-height: 15px !important;
     letter-spacing: 0.004em !important;
     color: #676666 !important;
-
 }
 .selectize-input.focus {
     border-color: #D8D6D6 !important;
@@ -772,7 +833,7 @@ selectize-input>input[placeholder] {
 }
 .selectize-dropdown .selected {
     background-color: #fff !important;
-    color: black !important;
+    color: #001332 !important;
     font-weight: 500 !important;
     padding-left: 80px; /* Espacio para el icono */
     background-image: url('../img/check.svg'); /* Ruta al archivo del icono */

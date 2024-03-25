@@ -1,5 +1,5 @@
 mypackageDependencies <- function() {
-  list(#Dependencias de PaquetePrueba (El paquete personal para vikua)
+  list(#Dependencias de DisenoVikua(El paquete personal para vikua)
     #Dependencias de Bootstrap
     htmlDependency(
       name = "bootstrap",
@@ -14,7 +14,7 @@ mypackageDependencies <- function() {
       version = "5.15.4",
       src = c(href = "https://kit.fontawesome.com/"),
       script = "862dd54f3c.js"
-    ),
+    ),#Dependencias donde tienen scripts de css y js de DisenoVikua
     htmlDependency(
       name = "mypackage-assets",
       version = "0.2",

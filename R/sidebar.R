@@ -9,10 +9,10 @@ sidebar <- function() {
                                       tags$div(class = 'text-wrapper-3', "SERVICIOS"),
                                       tags$div(class = 'frame-wrapper',
                                                tags$div(class = 'frame-2',
-                                                        actionBttn(inputId = "mis_tableros", label = cuadros("Mis Tableros"), class = "boton-sidebar", ),
-                                                        actionBttn(inputId = "tableros_vikua", label = cuadros("Tableros Vikua"), class = "action-button boton-sidebar",size = "lg"),
-                                                        actionBttn(inputId = "insights", label = cuadros("Insights"), class = "action-button boton-sidebar",size = "lg"),
-                                                        actionBttn(inputId = "data_player", label = cuadros("Data Player"), class = "action-button boton-sidebar",size = "lg"),
+                                                        actionBttn(inputId = "mis_tableros", label = cuadros("Mis Tableros"), class = "boton-sidebar" ),
+                                                        actionBttn(inputId = "tableros_vikua", label = cuadros("Tableros Vikua"), class = "boton-sidebar",size = "lg"),
+                                                        actionBttn(inputId = "insights", label = cuadros("Insights"), class = "boton-sidebar",size = "lg"),
+                                                        actionBttn(inputId = "data_player", label = cuadros("Data Player"), class = "boton-sidebar",size = "lg"),
                                                )
                                       )
                              ),
@@ -29,24 +29,24 @@ sidebar <- function() {
                              tags$div(class = 'frame',
                                       tags$div(class = 'div-wrapper', tags$div(class = 'text-wrapper', "DATA")),
                                       tags$div(class = 'frame-2',
-                                               actionBttn(inputId = "mi_data", label = cuadros("Mi data"), class = "action-button boton-sidebar",size = "lg"),
-                                               actionBttn(inputId = "data_vikua", label = cuadros("Data Vikua"), class = "action-button boton-sidebar",size = "lg"),
+                                               actionBttn(inputId = "mi_data", label = cuadros("Mi data"), class = "boton-sidebar",size = "lg"),
+                                               actionBttn(inputId = "data_vikua", label = cuadros("Data Vikua"), class = "boton-sidebar",size = "lg"),
                                                tags$div(class = 'frame-4',
                                                         tags$div(class = 'div-wrapper', tags$div(class = 'text-wrapper', "MIEMBROS")),
                                                         tags$div(class = 'frame-2',
-                                                                 actionBttn(inputId = "usuarios", label = cuadros("Usuarios"), class = "action-button boton-sidebar",size = "lg"),
-                                                                 actionBttn(inputId = "empresas", label = cuadros("Empresas"), class = "action-button boton-sidebar",size = "lg")
+                                                                 actionBttn(inputId = "usuarios", label = cuadros("Usuarios"), class = "boton-sidebar",size = "lg"),
+                                                                 actionBttn(inputId = "empresas", label = cuadros("Empresas"), class = "boton-sidebar",size = "lg")
                                                         )
                                                )),
                              ),
                              tags$div(class = 'frame-5',
                                       tags$div(class = 'div-wrapper', tags$div(class = 'text-wrapper', "CONFIGURACIONES")),
                                       tags$div(class = 'frame-2',
-                                               actionBttn(inputId = "administradores", label = cuadros("Administradores"), class = "action-button boton-sidebar",size = "lg"),
-                                               actionBttn(inputId = "modo_dia", label = cuadros("Modo día"), class = "action-button boton-sidebar",size = "lg"),
-                                               actionBttn(inputId = "mi_cuenta", label = cuadros("Mi cuenta"), class = "action-button boton-sidebar",size = "lg"),
-                                               actionBttn(inputId = "contrasena", label = cuadros("Contraseña"), class = "action-button boton-sidebar",size = "lg"),
-                                               actionBttn(inputId = "salir", label = cuadros("Salir"), class = "action-button boton-sidebar",size = "lg")
+                                               actionBttn(inputId = "administradores", label = cuadros("Administradores"), class = "boton-sidebar",size = "lg"),
+                                               actionBttn(inputId = "modo_dia", label = cuadros("Modo día"), class = "boton-sidebar",size = "lg"),
+                                               actionBttn(inputId = "mi_cuenta", label = cuadros("Mi cuenta"), class = "boton-sidebar",size = "lg"),
+                                               actionBttn(inputId = "contrasena", label = cuadros("Contraseña"), class = "boton-sidebar",size = "lg"),
+                                               actionBttn(inputId = "salir", label = cuadros("Salir"), class = "boton-sidebar",size = "lg")
                                       )
 
                              )
