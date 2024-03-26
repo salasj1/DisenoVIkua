@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
+
+
     // importante para los botones para cambiar su estilo
     var buttons = document.querySelectorAll('button');
     buttons.forEach(function(button) {
@@ -30,29 +32,11 @@ document.addEventListener("DOMContentLoaded", function() {
             });
         }
     });
-    //Para el TextInput
-    /*var selects = document.querySelectorAll('select');
-    selects.forEach(function(select) {
-        // Agregar una opción deshabilitada al principio que actuará como placeholder
-        var option = document.createElement('option');
-        option.textContent = 'Selecciona una opción';
-        option.disabled = true;
-        option.selected = true;
-        select.insertBefore(option, select.firstChild);
-    });*/
 
 
-    var textInputAle = document.getElementById("textInputAle");
-    if (textInputAle) {
-        textInputAle.oninput = function() {
-            alert("Has cambiado el texto!");
-        }
-    }
-
+    //Esto es para que el ploty se vea bien
     var Plotly = window.Plotly;
-
     var plotElement = document.getElementById("histPlotAle");
-
     if (plotElement) {
 
         // Usar proxy CORS
@@ -211,100 +195,7 @@ window.removeErrorMessage = function(ids) {
         }
     });
 };
-/*// Función para agregar mensajes de error a los campos de texto
-window.addErrorMessage = function(ids, messageText) {
-    // Si ids no es un array, conviértelo en un array
-    if (!Array.isArray(ids)) {
-        ids = [ids];
-    }
-    // Iterar sobre cada ID proporcionado
-    ids.forEach(function(id) {
-        var textInput = document.getElementById(id);
-        if (textInput) {
-            var errorMsg = textInput.parentNode.querySelector('.error-message');
-            if (!errorMsg) {
-                errorMsg = document.createElement('div');
-                errorMsg.classList.add('error-message');
-                textInput.parentNode.insertBefore(errorMsg, textInput.nextSibling);
-            }
-            // Agregar un nuevo controlador de eventos
-            textInput.updateErrorMsg = function() {
-                // Si el campo de texto ha sido modificado
-                if (textInput.modified) {
-                    // Verificar si el mensaje de error ya existe
-                    if (!errorMsg.textContent.includes(messageText)) {
-                        errorMsg.textContent += messageText + '\n'; // Agregar el texto del mensaje proporcionado al final del contenido actual
-                    }
-                    errorMsg.style.display = 'block';
-                    errorMsg.classList.add('error-mensaje-input');
-                    textInput.classList.add('error-input');
-                    textInput.previousElementSibling.classList.add('error-input');
-                }
-            };
-            // Agregar un controlador de eventos para marcar el campo de texto como modificado cuando el usuario ingresa texto
-            textInput.addEventListener('change', function() {
-                textInput.modified = true;
-                textInput.updateErrorMsg();
-            });
-        }
-    });
-};*/
 
-
-
-
-/*window.removeErrorMessage = function(ids) {
-    // Si ids no es un array, conviértelo en un array
-    if (!Array.isArray(ids)) {
-        ids = [ids];
-    }
-    ids.forEach(function(id) {
-        // Buscar el elemento de entrada de texto con el ID proporcionado
-        var textInput = document.getElementById(id);
-        // Si se encuentra el elemento de entrada de texto
-        if (textInput) {
-            // Buscar el mensaje de error del campo de texto
-            var errorMsg = textInput.parentNode.querySelector('.error-message');
-            // Si se encuentra el mensaje de error
-            if (errorMsg) {
-                // Borrar tod0 el contenido del mensaje de error
-                errorMsg.textContent = '';
-                // Ocultar el mensaje de error
-                errorMsg.style.display = 'none';
-                // Eliminar la clase error-input del campo de texto
-                textInput.classList.remove('error-input');
-                // Eliminar la clase error-input del elemento hermano anterior del campo de texto
-                textInput.previousElementSibling.classList.remove('error-input');
-            }
-        }
-    });
-};*/
-/*// Función para eliminar mensajes de error de los campos de texto
-window.removeErrorMessage = function(ids) {
-    // Iterar sobre cada ID proporcionado
-    // Si ids no es un array sino que es un solo id, conviértelo en un array
-    if (!Array.isArray(ids)) {
-        ids = [ids];
-    }
-    ids.forEach(function(id) {
-        // Buscar el elemento de entrada de texto con el ID proporcionado
-        var textInput = document.getElementById(id);
-        // Si se encuentra el elemento de entrada de texto
-        if (textInput) {
-            // Buscar el mensaje de error del campo de texto
-            var errorMsg = textInput.parentNode.querySelector('.error-message');
-            // Si se encuentra el mensaje de error
-            if (errorMsg) {
-                // Ocultar el mensaje de error
-                errorMsg.style.display = 'none';
-                // Eliminar la clase error-input del campo de texto
-                textInput.classList.remove('error-input');
-                // Eliminar la clase error-input del elemento hermano anterior del campo de texto
-                textInput.previousElementSibling.classList.remove('error-input');
-            }
-        }
-    });
-};*/
 
 // Controlador de mensajes personalizado para agregar mensajes de error
 Shiny.addCustomMessageHandler('addErrorMessage', function(message) {
