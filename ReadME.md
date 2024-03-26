@@ -3,13 +3,13 @@
 
 Esta es una librería que se realizó con la finalidad de cambiar el diseño de los componentes en `R` al diseño que utilizan en Vikua.
 
-Esta en su una version beta(0.2)
+Esta en su una versión beta(0.2)
 
 https://github.com/salasj1/DisenoVikua/assets/46848155/c4092eb1-8299-49ee-91c9-a68d94cba0ba
 
 
 ## [Getting Started](/EJEMPLOS/01-Getting_Started.R)
-Si quieres comenzar rápido, dale click al titulo ***Getting Started*** que te redirijirá a un script de `R` para copiar y pegar rapido los pasos  instalación.🏃‍♂️
+Si quieres comenzar rápido, dale click al título ***Getting Started*** que te redirijirá a un script de `R` para copiar y pegar rápido los pasos instalación.🏃‍♂️
 
 Aqui igualmente te enseñamos los pasos para comenzar:
 
