@@ -47,7 +47,7 @@ ui <- fluidPage(
 
 
 ### ¡LISTO!🚀
-Ya con eso tendremos instalada nuestra librería DisenoVikua en buen funcionamiento con muchas de las librerias comunes de `shiny` dependencias de `bootstrap v5`, `fontawsome` y scripts de `JS` y `CSS` hechas para este paquete😁. 
+Ya con eso tendremos instalada nuestra librería DisenoVikua en buen funcionamiento con muchas de las librerias comunes de `shiny`, dependencias de `bootstrap v5`, `fontawsome` y scripts de `JS` y `CSS` hechas para este paquete😁. 
 
 
 
